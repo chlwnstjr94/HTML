@@ -5,8 +5,13 @@ HTML(**H**yper**t**ext **M**arkup **L**anguage)은 마크업 언어로 웹 페�
   
 ## HTML 구조
 ![HTML 구조](https://blogfiles.pstatic.net/MjAyMTA5MTJfMTY4/MDAxNjMxNDI1MzM0NjE1.Zqp3D87NuuK_Knw1XIj112scin7uwjGmwv-f3JLH7OIg.RZQlnaQSvZ5BE7e0YxCyaNR0lbNcTCiyXmUyIkWYS84g.PNG.chlwnstjr94/image.png)
-- Head : 각종 설정을 넣는 곳, CSS와 JavaScript를 연결
-- Body : 화면의 요소들을 넣는 곳, 넣은 내용들이 사용자에게 보여짐
+- Head : 사용자에게 보여지는 ui(user interface)적 요소는 전혀 없고 matadata만 있다.  
+브라우저에서 검색할 때 나오는 타이틀이나 부가설명 그리고 북마크 추가할때 나오는 제목이나 아이콘들 등이 정의, CSS와 JavaScript 파일를 연결  
+  > ui : 사용자에게 컴퓨터를 편리하게 사용할 수 있는 환경을 제공하는 설계 내용  
+  > metadata : 데이터에 대한 데이터, 어떤 목적을 가지고 만들어진 데이터
+- Body : 화면의 요소들을 넣는 곳, 넣은 내용들이 사용자에게 보여지는 가장 중요한 최상의 컨테이너이다.  
+  body안에는 작성한 내용들이 바로 사용자한테 보여지는 태그들로 이루어져 있다..
+
   
 ## HTML 요소 분석
 ![HTML 요소](https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png)
@@ -49,6 +54,7 @@ HTML(**H**yper**t**ext **M**arkup **L**anguage)은 마크업 언어로 웹 페�
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>My test page</title>
   </head>
   <body>
@@ -62,7 +68,8 @@ HTML(**H**yper**t**ext **M**arkup **L**anguage)은 마크업 언어로 웹 페�
 |`<html></html>`|페이지 전체의 컨텐츠를 감싸며 루트(root)요소라고도 한다.|
 |`<head></head>`|HTML 페이지에 포함되어 있는 모든 것들의 컨테이너 역할을 한다. 검색 결과에 표시되길 원하는 페이지 설명, 컨텐츠를 꾸미기 위한 CSS, 문자 집합 선언 등과 같은 것들이 포함된다.|
 |`<body></body>`|페이지에 방문한 모든 웹 사용자들에게 보여주길 원하는 모든 컨텐츠를 담고 있으며, 그것이 텍스트, 이미지, 비디오, 게임, 오디오 등 다른 무엇이든 될 수 있다.|
-|`<meta charset="utf-8">`|문서가 사용해야 할 집합을 utf-8로 설정한다(utf-8 문자 집합에는 인간의 방대한 주류 기록언어에 있는 대부분의 문자가 포함되어 있다.). 사용할 수 있는 어떠한 문자 컨텐트도 다를 수 있다. 이 문자 집합을 설정하지 않을 이유가 없으며, 그렇게 설정하면 나중에 발생할 수 있는 일부 문제를 피할 수 있다.| 
+|`<meta charset="utf-8">`|문서가 사용해야 할 글자의 포맷을 utf-8로 설정한다(utf-8 문자 집합에는 인간의 방대한 주류 기록언어에 있는 대부분의 문자가 포함되어 있다.). 사용할 수 있는 어떠한 문자 컨텐트도 다를 수 있다. 이 문자 집합을 설정하지 않을 이유가 없으며, 그렇게 설정하면 나중에 발생할 수 있는 일부 문제를 피할 수 있다.| 
+|`<meta name="viewport" content="width=device-width">`|디바이스 스크린의 너비를 전부 사용한다고 정의
 |`<title></title>`|**페이지의 제목을 설정**하는 것으로 페이지가 로드되는 브라우저의 탭에 이 제목이 표시된다. 이 요소는 북마크나 즐겨찾기에서 페이지를 설명하는 것으로도 사용된다.|
   
 ### 이미지 태그 & 속성
